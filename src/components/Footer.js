@@ -1,10 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import XIcon from "../Assets/Icons/X.svg";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
@@ -33,12 +30,12 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://twitter.com/Soumyajit4419"
+                href="https://x.com/Soumyajit4419"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiOutlineTwitter />
+                <img src={XIcon} alt="X" style={{ width: "20px", height: "20px" }} />
               </a>
             </li>
             <li className="social-icons">
