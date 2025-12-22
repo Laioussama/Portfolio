@@ -13,38 +13,16 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              I’m a <b className="purple">Digital Project Manager and Trainer</b> passionate about helping organizations evolve, modernize, and adopt solutions that truly make a difference. Over the years, I’ve led transformation initiatives across diverse environments — from finance and industry to media and large-scale services — always with the same objective: turning strategic ambitions into concrete, operational results.
               <br />
               <br />
-              I’m proficient in
-              <i>
-                <b className="purple">
-                  {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
-                </b>
-              </i>
-              — and I enjoy working across both backend and frontend stacks.
+              I specialize in <b className="purple">digital transformation, dématérialisation, and change management</b>, with a strong ability to navigate complex ecosystems, align stakeholders, and deliver projects that are both scalable and meaningful. My experience spans transversal project leadership, process optimization, and the deployment of digital tools that improve efficiency and user experience.
               <br />
               <br />
-              My key areas of interest include developing
-              <i>
-                <b className="purple">
-                  {" "}
-                  Web Applications, Blockchain Solutions,{" "}
-                </b>
-              </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              I’m particularly interested in how organizations adapt to new digital challenges, how teams embrace change, and how technology can simplify workflows while empowering people. Whether I’m managing a multi-site digital program, supporting teams through change, or designing training modules, I bring structure, clarity, and a collaborative mindset.
               <br />
               <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
-              <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
-              </i>
+              Whenever possible, I enjoy building bridges between strategy and execution — ensuring that every project is not only well-delivered, but well-adopted.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
