@@ -23,10 +23,12 @@ function ResumeNew() {
             variant="primary"
             href={pdf}
             target="_blank"
+            download="Oussama_Laiche_CV.pdf"
+            title="Download CV (FR)"
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;Download CV (FR)
           </Button>
         </Row>
 
@@ -41,10 +43,12 @@ function ResumeNew() {
             variant="primary"
             href={pdf}
             target="_blank"
+            download="Oussama_Laiche_CV.pdf"
+            title="Download CV (FR)"
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;Download CV (FR)
           </Button>
         </Row>
       </Container>
