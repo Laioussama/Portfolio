@@ -36,20 +36,33 @@ function ResumeNew() {
         <Row className="resume">
           <Document
             file={pdf}
-            className="d-flex justify-content-center"
+            className="d-flex flex-column align-items-center"
             onLoadSuccess={({ numPages }) => setNumPages(numPages)}
           >
             {numPages &&
-              Array.from({ length: numPages }, (_, index) => (
-                <div key={`page_${index + 1}`} style={{ marginBottom: "1rem" }}>
-                  <Page
-                    pageNumber={index + 1}
-                    scale={width > 786 ? 1.7 : 0.6}
-                    renderTextLayer={false}
-                    renderAnnotationLayer={false}
-                  />
-                </div>
-              ))}
+              (() => {
+                const pageWidth = width > 786 ? 794 : Math.floor(width * 0.9); // A4-ish width in px at 96dpi
+                return Array.from({ length: numPages }, (_, index) => (
+                  <div
+                    key={`page_${index + 1}`}
+                    style={{
+                      marginBottom: "1.5rem",
+                      display: "flex",
+                      justifyContent: "center",
+                      width: "100%",
+                    }}
+                  >
+                    <div style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.15)", background: "#fff" }}>
+                      <Page
+                        pageNumber={index + 1}
+                        width={pageWidth}
+                        renderTextLayer={false}
+                        renderAnnotationLayer={false}
+                      />
+                    </div>
+                  </div>
+                ));
+              })()}
           </Document>
         </Row>
 
