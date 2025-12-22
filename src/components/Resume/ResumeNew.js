@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import pdf from "../../Assets/Oussama_Laiche_CV.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
+import JumpToTop from "../JumpToTop";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
@@ -75,10 +76,7 @@ function ResumeNew() {
             title="Download CV (FR)"
             style={{ maxWidth: "250px" }}
           >
-            <AiOutlineDownload />
-            &nbsp;Download CV (FR)
-          </Button>
-        </Row>
+        <JumpToTop />
       </Container>
     </div>
   );
