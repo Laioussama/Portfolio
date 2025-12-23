@@ -76,6 +76,11 @@ function ResumeNew() {
             title="Download CV (FR)"
             style={{ maxWidth: "250px" }}
           >
+            <AiOutlineDownload />
+            &nbsp;Download CV (FR)
+          </Button>
+        </Row>
+
         <JumpToTop />
       </Container>
     </div>

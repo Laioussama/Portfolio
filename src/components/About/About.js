@@ -6,6 +6,8 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import PMTools from "./PMTools";
+import PMMethodology from "./PMMethodology";
 
 function About() {
   return (
@@ -37,13 +39,23 @@ function About() {
             </Col>
           </Row>
           <h1 className="project-heading">
-            Professional <strong className="purple">Skillset </strong>
+            <strong className="purple">Technical tools</strong>
           </h1>
 
           <Techstack />
 
           <h1 className="project-heading">
-            <strong className="purple">Tools</strong> I use
+            <strong className="purple">Project management tools</strong>
+          </h1>
+          <PMTools />
+
+          <h1 className="project-heading">
+            <strong className="purple">Project management methodology</strong>
+          </h1>
+          <PMMethodology />
+
+          <h1 className="project-heading">
+            <strong className="purple">General tools</strong> i use
           </h1>
           <Toolstack />
 
