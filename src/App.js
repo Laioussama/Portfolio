@@ -6,7 +6,7 @@ import About from "./components/About/About";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate
@@ -35,10 +35,9 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* Projects route removed to hide the Projects section */}
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/Article" element={<Navigate to="/"/>} />
+          <Route path="/Article" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>
