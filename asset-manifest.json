@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.5451a690.css",
+    "main.js": "/Portfolio/static/js/main.897af478.js",
+    "static/js/453.3f1fb51b.chunk.js": "/Portfolio/static/js/453.3f1fb51b.chunk.js",
+    "static/media/Oussama_Laiche_CV.pdf": "/Portfolio/static/media/Oussama_Laiche_CV.0f167ca2648b0d68b720.pdf",
+    "static/media/home-main.svg": "/Portfolio/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
+    "static/media/about.png": "/Portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/avatar.svg": "/Portfolio/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
+    "static/media/SQL.svg": "/Portfolio/static/media/SQL.52fc098126b8b29ddd950a944b5d0026.svg",
+    "static/media/React.svg": "/Portfolio/static/media/React.dab5e742691999bfe3df57d8d690607b.svg",
+    "static/media/pre.svg": "/Portfolio/static/media/pre.4410c5baaa673cc131da.svg",
+    "static/media/Node.svg": "/Portfolio/static/media/Node.066ea1a40c1c8f42c3facd6c4128111d.svg",
+    "static/media/Cplusplus.svg": "/Portfolio/static/media/Cplusplus.2bf4fe63e342c83859f0e7726c2457f7.svg",
+    "static/media/Javascript.svg": "/Portfolio/static/media/Javascript.2d2e6d4fde8c0beaf89875c287164a7c.svg",
+    "index.html": "/Portfolio/index.html",
+    "static/media/Git.svg": "/Portfolio/static/media/Git.9da88573cca3c97a3a1523ae09d93654.svg",
+    "static/media/logo.svg": "/Portfolio/static/media/logo.1587bfbdfae97b256e8a91c56bf1dc0c.svg",
+    "static/media/Firebase.svg": "/Portfolio/static/media/Firebase.c5e643a18f060de1d39eda5908abbb5f.svg",
+    "static/media/X.svg": "/Portfolio/static/media/X.90b266e5cd76bab0bbb22e423498e118.svg",
+    "main.5451a690.css.map": "/Portfolio/static/css/main.5451a690.css.map",
+    "main.897af478.js.map": "/Portfolio/static/js/main.897af478.js.map",
+    "453.3f1fb51b.chunk.js.map": "/Portfolio/static/js/453.3f1fb51b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5451a690.css",
+    "static/js/main.897af478.js"
+  ]
+}
