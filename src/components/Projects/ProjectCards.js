@@ -3,8 +3,16 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function ProjectCards(props) {
+  const primaryLabel = props.linkLabel
+    ? props.linkLabel
+    : props.isBlog
+    ? "Blog"
+    : "GitHub";
+  const PrimaryIcon = props.linkLabel === "LinkedIn" ? FaLinkedinIn : BsGithub;
+
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -14,8 +22,8 @@ function ProjectCards(props) {
           {props.description}
         </Card.Text>
         <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+          <PrimaryIcon /> &nbsp;
+          {primaryLabel}
         </Button>
         {"\n"}
         {"\n"}

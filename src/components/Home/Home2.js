@@ -13,13 +13,24 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body" style={{ textAlign: "justify" }}>
-              I’m a <b className="purple">Digital Project Manager and Trainer</b> passionate about helping organizations evolve, modernize, and adopt solutions that truly make a difference. Over the years, I’ve led transformation initiatives across diverse environments — from finance and industry to media and large-scale services — always with the same objective: turning strategic ambitions into concrete, operational results.
+              I’m a <b className="purple">Digital Project Manager &amp; Change Management specialist</b> with
+              8+ years of experience deploying <b className="purple">IT / ERP solutions</b> and driving
+              digital transformation across international organisations — including Groupe CAT, Safran,
+              Alstom and METRO. My mission is simple: turn strategic ambitions into concrete,
+              measurable operational results.
               <br />
               <br />
-              I’m specialized in <b className="purple">digital transformation, dématérialisation, and change management</b>, with a strong ability to navigate complex ecosystems, align stakeholders, and deliver projects that are both scalable and meaningful. My experience spans transversal project leadership, process optimization, and the deployment of digital tools that improve efficiency and user experience.
+              I have led digital rollouts across <b className="purple">50+ sites in 4 regions</b> under
+              strict governance (<b className="purple">PRINCE2, ITIL 4, Agile / SAFe, Lean 4.0</b>),
+              orchestrating every phase from framing and integration testing to deployment and
+              post-go-live support. I align business, IT and integrators around a clear RACI, roadmap
+              and KPI dashboard, and I keep programmes on time and on scope.
               <br />
               <br />
-              Whenever possible, I enjoy building bridges between strategy and execution — ensuring that every project is not only well-delivered, but well-adopted.
+              I’m equally focused on <b className="purple">adoption</b>: I design LMS and e-learning
+              modules, train managers, key users and business teams, and build the communication that
+              makes new tools stick. Every project I deliver is not only well-executed, but
+              well-adopted.
             </p>
           </Col>
           <Col md={4} className="myAvtar">

@@ -1,7 +1,7 @@
 import React from "react";
+import { SiWindows, SiVisualstudiocode, SiMicrosoftsharepoint } from "react-icons/si";
+import { FaFirefoxBrowser, FaMicrosoft } from "react-icons/fa";
 import { Col, Row } from "react-bootstrap";
-import { SiWindows, SiVisualstudiocode } from "react-icons/si";
-import { FaFirefoxBrowser, FaInternetExplorer } from "react-icons/fa";
 
 function Toolstack() {
   return (
@@ -11,15 +11,19 @@ function Toolstack() {
         <div className="tech-icons-text">Windows</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons ">
-        <FaInternetExplorer fontSize={28} />
-        <div className="tech-icons-text">Internet Explorer</div>
+        <FaMicrosoft fontSize={30} />
+        <div className="tech-icons-text">Microsoft 365</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons ">
+        <SiMicrosoftsharepoint fontSize={34} />
+        <div className="tech-icons-text">SharePoint</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons ">
         <SiVisualstudiocode fontSize={36} />
-        <div className="tech-icons-text">Vs Code</div>
+        <div className="tech-icons-text">VS Code</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons ">
-        <FaFirefoxBrowser fontSize={28} />
+        <FaFirefoxBrowser fontSize={30} />
         <div className="tech-icons-text">Firefox</div>
       </Col>
     </Row>

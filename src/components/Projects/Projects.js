@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import erp from "../../Assets/Projects/codeEditor.png";
+import lean from "../../Assets/Projects/leaf.png";
+import governance from "../../Assets/Projects/blog.png";
+import adoption from "../../Assets/Projects/chatify.png";
+
+const LINKEDIN = "https://www.linkedin.com/in/oussama-laiche-2208a69b/";
 
 function Projects() {
   return (
@@ -15,76 +15,53 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          Key <strong className="purple">Engagements </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          A selection of digital transformation and change management programmes I have led.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={erp}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              linkLabel="LinkedIn"
+              title="Global ERP Standardisation — Alstom"
+              description="Led change management for a group-wide ERP rollout (MES, LES, VM, SAP) across 33 industrial sites in 4 regions. Coordinated 33 regional business experts, sequenced the initialisation, testing and deployment phases, enforced a strict project governance (weekly cockpits, kickoffs, retrospectives) and drove adoption through KPI dashboards, integration test scripts and a dedicated LMS."
+              ghLink={LINKEDIN}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={governance}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              linkLabel="LinkedIn"
+              title="Project Governance & Enterprise Architecture — METRO France"
+              description="Structured the framing of WMS, CRM and dématérialisation projects through RACI, roadmaps and budget steering. Centralised project data from every division to make reporting reliable, automated BI refreshes with cloud bots, administered the JIRA backlog and sprint planning, and trained project managers on PRINCE2, ITIL 4 and MS Project best practices."
+              ghLink={LINKEDIN}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={lean}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              linkLabel="LinkedIn"
+              title="Digital Transformation & Lean 4.0 — Safran"
+              description="Managed a portfolio of strategic projects accelerating the digitalisation of Customer Support and Smart MRO activities. Supported teams in adopting Lean 4.0 best practices and embedded continuous improvement into the digital roadmap."
+              ghLink={LINKEDIN}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={adoption}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              linkLabel="LinkedIn"
+              title="Change Adoption & User Enablement — METRO / Alstom"
+              description="Ran the change portfolio and the 9 levers of change with PRINCE2 practices: impact maps, communication and marketing plans, internal SharePoint sites, UX/UI workshops, e-learning modules and train-the-trainer sessions for managers, key users and business teams — plus post-go-live support via ServiceNow."
+              ghLink={LINKEDIN}
             />
           </Col>
         </Row>

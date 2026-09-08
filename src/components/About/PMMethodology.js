@@ -2,7 +2,16 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 
 function PMMethodology() {
-  const methods = ["ITIL4", "Prince2", "Agile", "CycleV", "SAFe", "TOGAF"];
+  const methods = [
+    "PRINCE2",
+    "ITIL 4",
+    "Agile / Scrum",
+    "SAFe",
+    "Lean 4.0",
+    "Kanban",
+    "Cycle V",
+    "TOGAF",
+  ];
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       {methods.map((m) => (

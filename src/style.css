@@ -703,6 +703,118 @@ button:focus {
   border: 2px solid #8a49a8;
 }
 
+/* --------- */
+/* CV preview (partial visibility) */
+/* --------- */
+
+.resume-cv {
+  width: 100%;
+  max-width: 860px;
+}
+
+.cv-title {
+  font-size: 2em;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.cv-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(192, 132, 245, 0.35);
+  border-radius: 12px;
+  padding: 28px 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cv-name {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.cv-headline {
+  color: #c084f5;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.cv-section-label {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  color: #c084f5;
+}
+
+.cv-body {
+  text-align: justify;
+  opacity: 0.92;
+}
+
+.cv-highlights {
+  padding-left: 20px;
+  text-align: justify;
+}
+
+.cv-highlights li {
+  padding-bottom: 8px;
+}
+
+.cv-locked {
+  position: relative;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px dashed rgba(192, 132, 245, 0.4);
+  max-height: 240px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.cv-locked-blur {
+  filter: blur(6px);
+  pointer-events: none;
+}
+
+.cv-locked-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 4, 20, 0) 0%,
+    rgba(10, 4, 20, 0.55) 45%,
+    rgba(10, 4, 20, 0.92) 100%
+  );
+}
+
+.cv-locked-overlay span {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  background: rgba(20, 8, 34, 0.85);
+  border: 1px solid rgba(192, 132, 245, 0.5);
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+.cv-cta {
+  text-align: center;
+  margin: 32px auto 10px;
+  max-width: 640px;
+}
+
+.cv-cta p {
+  opacity: 0.9;
+  margin-bottom: 14px;
+}
+
+.cv-cta-btn {
+  max-width: 250px;
+}
+
 .like-item {
   padding-top: 10px !important;
   font-size: 1.1em !important;
