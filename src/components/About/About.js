@@ -9,6 +9,7 @@ import Toolstack from "./Toolstack";
 import PMTools from "./PMTools";
 import PMMethodology from "./PMMethodology";
 import Leadership from "./Leadership";
+import LinkedInBadge from "./LinkedInBadge";
 
 function About() {
   return (
@@ -66,6 +67,11 @@ function About() {
           <Toolstack />
 
           <Github />
+
+          <h1 className="project-heading">
+            <strong className="purple">Connect</strong> with me
+          </h1>
+          <LinkedInBadge />
         </Container>
       </Container>
     </>
