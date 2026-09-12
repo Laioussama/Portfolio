@@ -8,6 +8,7 @@ import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import PMTools from "./PMTools";
 import PMMethodology from "./PMMethodology";
+import Leadership from "./Leadership";
 
 function About() {
   return (
@@ -53,6 +54,11 @@ function About() {
             <strong className="purple">Project management methodology</strong>
           </h1>
           <PMMethodology />
+
+          <h1 className="project-heading">
+            <strong className="purple">Leadership &amp; management</strong> skills
+          </h1>
+          <Leadership />
 
           <h1 className="project-heading">
             <strong className="purple">General tools</strong> i use

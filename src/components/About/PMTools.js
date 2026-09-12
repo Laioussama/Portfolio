@@ -1,7 +1,17 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { FaProjectDiagram } from "react-icons/fa";
-import { SiJira, SiConfluence, SiPowerbi, SiMiro, SiScrumalliance } from "react-icons/si";
+import {
+  SiJira,
+  SiConfluence,
+  SiPowerbi,
+  SiMiro,
+  SiScrumalliance,
+  SiMicrosoftexcel,
+  SiMicrosoftteams,
+  SiTableau,
+  SiTrello,
+} from "react-icons/si";
 
 function PMTools() {
   return (
@@ -34,6 +44,26 @@ function PMTools() {
       <Col xs={6} md={2} className="tech-icons">
         <SiScrumalliance fontSize={34} />
         <div className="tech-icons-text">Scrum / Kanban</div>
+      </Col>
+
+      <Col xs={6} md={2} className="tech-icons">
+        <SiTableau fontSize={34} />
+        <div className="tech-icons-text">Tableau</div>
+      </Col>
+
+      <Col xs={6} md={2} className="tech-icons">
+        <SiMicrosoftexcel fontSize={34} />
+        <div className="tech-icons-text">Excel</div>
+      </Col>
+
+      <Col xs={6} md={2} className="tech-icons">
+        <SiMicrosoftteams fontSize={34} />
+        <div className="tech-icons-text">MS Teams</div>
+      </Col>
+
+      <Col xs={6} md={2} className="tech-icons">
+        <SiTrello fontSize={34} />
+        <div className="tech-icons-text">Trello / Asana</div>
       </Col>
     </Row>
   );
