@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail, AiOutlineCopy, AiOutlineCheck } from "react-icons/ai";
+import { SiGmail } from "react-icons/si";
 import JumpToTop from "../JumpToTop";
 
 const EMAIL = "oussamalaiche1@gmail.com";
@@ -16,9 +17,17 @@ const CV_REQUEST_BODY =
   "Looking forward to hearing from you.\n\n" +
   "Best regards,\n";
 
-// Opens Gmail's compose window directly in the browser (works regardless of
-// whether the visitor has a default desktop mail client configured, unlike
-// a plain mailto: link).
+// mailto: is handled by the OS/browser itself, so it works even inside
+// restrictive in-app browsers (LinkedIn, WhatsApp, ...) that often block
+// Google's sign-in redirect used by the Gmail compose link below.
+const MAILTO =
+  `mailto:${EMAIL}` +
+  `?subject=${encodeURIComponent(CV_REQUEST_SUBJECT)}` +
+  `&body=${encodeURIComponent(CV_REQUEST_BODY)}`;
+
+// Opens Gmail's compose window directly in the browser. Offered as an
+// alternative since it requires the visitor to already be signed into a
+// Google account in that browser tab.
 const GMAIL_COMPOSE =
   "https://mail.google.com/mail/?view=cm&fs=1" +
   `&to=${encodeURIComponent(EMAIL)}` +
@@ -26,6 +35,20 @@ const GMAIL_COMPOSE =
   `&body=${encodeURIComponent(CV_REQUEST_BODY)}`;
 
 function ResumeNew() {
+  const [copied, setCopied] = useState(false);
+
+  async function copyEmail() {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+    } catch (err) {
+      // Clipboard API unavailable (very old browser / no HTTPS) — fall back
+      // to a manual selection so the address can still be copied.
+      window.prompt("Copy my email address:", EMAIL);
+    }
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }
+
   return (
     <div>
       <Container fluid className="resume-section">
@@ -104,16 +127,30 @@ function ResumeNew() {
                 Only a short preview of my CV is shown here. To request the full
                 CV, please contact me directly by email.
               </p>
-              <Button
-                variant="primary"
-                href={GMAIL_COMPOSE}
-                target="_blank"
-                rel="noreferrer"
-                className="cv-cta-btn"
+              <div className="cv-cta-actions">
+                <Button variant="primary" href={MAILTO} className="cv-cta-btn">
+                  <AiOutlineMail />
+                  &nbsp;Request Full CV
+                </Button>
+                <Button
+                  variant="outline-light"
+                  href={GMAIL_COMPOSE}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cv-cta-btn"
+                >
+                  <SiGmail />
+                  &nbsp;Open in Gmail
+                </Button>
+              </div>
+              <button
+                type="button"
+                className="cv-copy-email"
+                onClick={copyEmail}
               >
-                <AiOutlineMail />
-                &nbsp;Request Full CV
-              </Button>
+                {copied ? <AiOutlineCheck /> : <AiOutlineCopy />}
+                &nbsp;{copied ? "Copied!" : EMAIL}
+              </button>
             </div>
           </Col>
         </Row>
