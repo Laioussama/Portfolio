@@ -811,36 +811,8 @@ button:focus {
   margin-bottom: 14px;
 }
 
-.cv-cta-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  justify-content: center;
-}
-
 .cv-cta-btn {
   max-width: 250px;
-}
-
-.cv-copy-email {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 16px;
-  background: transparent;
-  border: none;
-  color: #c084f5;
-  font-size: 0.95em;
-  cursor: pointer;
-  padding: 6px 10px;
-  border-radius: 6px;
-  transition: background 0.2s ease;
-}
-
-.cv-copy-email:hover,
-.cv-copy-email:focus {
-  background: rgba(192, 132, 245, 0.12);
-  color: #d9b3ff;
 }
 
 .like-item {
