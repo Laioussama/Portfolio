@@ -8,11 +8,11 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi everyone! I’m <span className="purple">Oussama LAÏCHE</span>, a{" "}
+            Hello! I’m <span className="purple">Oussama LAÏCHE</span>, a{" "}
             <span className="purple">Digital Project Manager &amp; Change Management specialist</span>{" "}
             based in <span className="purple">Paris, France</span>.
             <br />
-            For 8+ years I have deployed <span className="purple">IT / ERP solutions</span> and led
+            For +10 years I have deployed <span className="purple">IT / ERP solutions</span> and led
             digital transformation programmes for international groups, from framing and governance to
             deployment, user training and adoption.
             <br />
@@ -20,9 +20,9 @@ function AboutCard() {
             clear RACI, roadmap and KPI dashboard — and by making sure every rollout is genuinely
             adopted on the ground.
             <br />
-            <br />I hold a <span className="purple">PhD</span> in Communication &amp; Media
+            <br />I hold a <span className="purple">PhD</span> in Communication &amp; Systems
             (Ludwig-Maximilians-Universität München) and an <span className="purple">M.Sc.</span> in
-            Digital Business Management &amp; Computer Systems Analysis.
+            Digital IT Management &amp; Computer Systems.
           </p>
 
           <p style={{ textAlign: "justify", marginBottom: "6px" }}>

@@ -5,23 +5,14 @@ import Particle from "../Particle";
 import { AiOutlineMail } from "react-icons/ai";
 import JumpToTop from "../JumpToTop";
 
-const EMAIL = "oussamalaiche1@gmail.com";
-const CV_REQUEST_SUBJECT = "Resume Request — Your Portfolio";
+const EMAIL = "Oussamalaiche1@gmail.com";
+const CV_REQUEST_SUBJECT = "Request Full CV";
 const CV_REQUEST_BODY =
-  "Hello Mr. Oussama,\n\n" +
-  "I came across your profile and found your background in digital transformation, " +
-  "ERP deployment and change management very interesting.\n\n" +
-  "Could you please send me your full resume? I would love to learn more about your " +
-  "experience and discuss it further.\n\n" +
-  "Looking forward to hearing from you.\n\n" +
-  "Best regards,\n";
+  "Hello sir, I'm interested in your profile and would like to receive your full CV.";
 
-// Opens Gmail's compose window directly in the browser, pre-filled and
-// addressed to oussamalaiche1@gmail.com.
-const GMAIL_COMPOSE =
-  "https://mail.google.com/mail/?view=cm&fs=1" +
-  `&to=${encodeURIComponent(EMAIL)}` +
-  `&su=${encodeURIComponent(CV_REQUEST_SUBJECT)}` +
+const MAILTO_LINK =
+  `mailto:${EMAIL}` +
+  `?subject=${encodeURIComponent(CV_REQUEST_SUBJECT)}` +
   `&body=${encodeURIComponent(CV_REQUEST_BODY)}`;
 
 function ResumeNew() {
@@ -105,9 +96,7 @@ function ResumeNew() {
               </p>
               <Button
                 variant="primary"
-                href={GMAIL_COMPOSE}
-                target="_blank"
-                rel="noreferrer"
+                href={MAILTO_LINK}
                 className="cv-cta-btn"
               >
                 <AiOutlineMail />
